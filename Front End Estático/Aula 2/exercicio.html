@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valor dos Pacotes</title>
+
+    <style>
+
+        .not-border {
+             border: none;
+        }
+
+        .defaultWidth{
+            width: 280px;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            text-align: center;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+
+        th, td{
+            border: 1px solid rgb(190, 190, 190);
+            padding:10px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        td.linha{
+            text-align: left;
+        }
+
+        td.basico{
+            color: white;
+            background-color:#7ebff2;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        td.padrao{
+            color: white;
+            background-color: #4a87ec;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        td.avancado{
+            color: white;
+            background-color: #7073ec;
+            font-size: 30px;
+            text-align: center;
+        }
+        
+        button.basico{
+            padding: 10px;
+            color: white;
+            background-color:#7ebff2;
+            font-size: 20px;
+            border: 1px solid white;
+            
+        }
+
+        button.padrao{
+            padding: 10px;
+            color: white;
+            background-color: #4a87ec;
+            font-size: 20px;
+            border: 1px solid white;
+            
+        }
+
+        button.avancado{
+            padding: 10px;
+            color: white;
+            background-color: #7073ec;
+            font-size: 20px;
+            border: 1px solid white;
+            
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Valor dos Pacotes</caption>
+        <thead>
+            <tr>
+                <th class="not-border"></th>
+                <th class="defaultWidth">Básico</th>
+                <th class="defaultWidth">Padrão</th>
+                <th class="defaultWidth">Avançado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="linha">Preço Mensal</td>
+                <td class="basico">R$ 29,00</td>
+                <td class="padrao">R$ 59,00</td>
+                <td class="avancado">R$ 139,00</td>
+            </tr>
+            <tr>
+                <td class="linha">Comercial</td>
+                <td>1 usuário completo</td>
+                <td>5 usuários completos</td>
+                <td>Usuários personalizados</td>
+            </tr>
+            <tr>
+                <td class="linha">Usuários ilimitados somente leitura</td>
+                <td>1.000 visualizações de email</td>
+                <td>2.000 visualizações de email</td>
+                <td>Visualizações de email personalizadas</td>
+            </tr>
+            <tr>
+                <td class="linha">Contatos</td>
+                <td>5 contatos por cliente</td>
+                <td>25 contatos por cliente</td>
+                <td>Contatos ilimitados</td>
+            </tr>
+
+            <tr>
+                <td class="linha">Café</td>
+                <td>5 xícaras</td>
+                <td>8 xícaras</td>
+                <td>10 xícaras</td>
+            </tr>
+            
+        </tbody>
+        <tfoot>
+            <tr>
+                <td class="not-border"></td>
+                <td><button class="basico"> Escolha o plano</button></td>
+                <td><button class="padrao"> Escolha o plano</button></td>
+                <td><button class="avancado"> Escolha o plano</button></td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
