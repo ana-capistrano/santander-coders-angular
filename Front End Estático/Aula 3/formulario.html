@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <form>
+            <fieldset>
+                    <legend>Dados Pessoais</legend>
+
+                    <div class="margin-bottom">
+                        <label for="name">Nome:</label>
+                        <input id="name" type="text" placeholder="nome"/>
+                    </div>
+
+                    <div class="margin-bottom">
+                        <label for="enail">Email</label>
+                        <input id="name" type="text" placeholder="email"/>
+                    </div>
+
+                    <div class="margin-bottom">
+                        <label for="password">Senha:</label>
+                        <input id="name" type="text" placeholder="senha"/>
+                    </div>
+
+                    <div class="margin-bottom">
+                        <select id="cidade" name="cidade">
+                            <optgroup>
+                                <option value="VIX">Vitória</option>
+                                <option value="VV">Vila Velha</option>
+                                <option value="SER">Serra</option>
+                                <option value="CAR">Cariacica</option>
+                            </optgroup>
+
+                            <optgroup>
+                                <option>Santos</option>
+                                <option>São Paulo</option>
+                                <option>Campinas</option>
+                            </optgroup>
+                        </select>
+
+
+                            <div>
+                                <label for="comentario"> Comentário</label>
+                                <textarea 
+                                style="resize: none;" name="comentario" id="comentario" cols="30" rows="10" minlength="0" maxlength="200"></textarea>
+                            </div>
+                        
+                            <label for="aceito-os-termos">Aceito os Termos e Condições</label>
+                            <input  type="checkbox" name="aceito-termos"/> 
+
+
+                            
+                        
+                    </div>
+
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

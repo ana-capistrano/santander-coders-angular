@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio Digital</title>
+    <style>
+        h1 {
+            margin: 0;
+        }
+
+        .titulo {
+            top: 0px;
+            padding: 30px 10px;
+            color:white;
+            background-color: #5296d5;
+            text-align: left;
+            z-index: 1;
+        }
+
+        .navegacao {
+            color:white;
+            padding: 10px;
+            background:#65c97a;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 350px;
+            grid-auto-rows: max-content;
+            gap: 5px;
+            margin: 5px;
+        }
+        
+        .conteudo {                
+            padding-left: 5px;
+            color:white;
+            background-color: #e7a03c;
+        }
+
+        .footer {
+            text-align: left;
+            padding: 10px;
+            color:white;                
+            background-color: #364558;
+            
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <header class="titulo">
+            <h1>Cardápio Digital</h1>
+        </header>
+        <nav class="navegacao">Barra de Navegação</nav>
+        <main class="wrapper">
+            <section class="conteudo">
+                <p>Conteúdo 1</p>
+            </section>
+            <section class="conteudo">
+                <p>Conteúdo 2</p>
+            </section>
+        </main>
+        <footer class="footer">Rodapé</footer>
+    </div>  
+</body>
+</html>
