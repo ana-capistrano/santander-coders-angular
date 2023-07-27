@@ -1,275 +1,274 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cardapio Digital</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cardapio Digital</title>
 
-    <style>
-         :root {
-            --cor-fundo: #4caf50;
-        }
+  <style>
+    :root {
+      --cor-fundo: #4caf50;
+    }
 
-        * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-      body {
-        font-family: Arial, sans-serif;
-        
-      }
+    html {
+      scroll-padding-top: 160px;
+      scroll-behavior: smooth;
+    }
 
-      main {
-        margin-top: 150px;
-      }
-
+    body {
+      font-family: Arial, sans-serif;
+    }
 
     header {
-        top: 0px;
-        width: 100%;
-        position: fixed;
-        padding-top: 20px;
-        background-color: var(--cor-fundo);
-        text-align: center;
-        z-index: 1;
-      }
+      position: fixed;
+      top: 0;
+      padding-top: 20px;
+      width: 100%;
+      background-color: var(--cor-fundo);
+      color: white;
+      border-bottom: 1px solid gray;
+      text-align: center;
+      z-index: 1;
+    }
 
     nav {
-        background-color: #ddd;
-        padding: 20px;
-        margin-top: 20px;
-      }
+      background-color: white;
+      margin-top: 20px;
+      padding: 20px;
+    }
 
-      a:hover {
-        background-color: #f1f1f1;
-      }
+    a {
+      padding: 5px;
+      text-decoration: none;
+      color: gray;
+    }
 
-      a {
-        padding: 5px;
-        text-decoration: none;
-        color: #333;
-      }
+    main {
+      margin-top: 160px;
+    }
 
-      section {
-        position: relative;
-        width: 80%;
-        margin: 20px auto;
-      }
+    section {
+      width: 80%;
+      margin: 20px auto;
+    }
 
-      article {
-        margin-top: 20px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        padding: 30px;
-      }
+    article {
+      margin-top: 20px;
+      padding: 20px;
+      border: 1px solid gray;
+      border-radius: 5px;
+    }
 
-      article p {
-        margin-top: 20px;
-      }
+    figcaption {
+      display: none;
+    }
 
-      footer {
-        background-color: #4caf50;
-        padding: 20px;
-        text-align: center;
-      }
+.catalogo-item {
+  display: flex;
+  grid-template-columns: 150px auto;
+}
 
-      figcaption {
-        /*   visibility: hidden; */
-        display: none;
-      }
+.catalogo-imagem {
+  grid-column-start: 1;
+}
 
-      html {
-        scroll-padding-top: 150px;
-        scroll-behavior: smooth;
-      }
+.catalogo-texto {
+  grid-column-end: 2;
+  margin-left: 10px;
+  align-items: center;
+}
 
-      figure {
-        top:48px;
-        right: 0;
-        position: absolute;
-      }
+    table {
+      margin: 20px auto;
+      width: 100%;
+      border-collapse: collapse;
+    }
 
-      img {
-        width: 64px;
-      }
+    th,
+    td {
+      padding: 20px;
+      border: 1px solid gray;
+      text-align: center;
+      vertical-align: middle;
+    }
 
-      caption{
-            font-size: 1.5em;
-            font-weight: bold;
-            border: 1px solid rgb(190, 190, 190);
-            padding: 30px;
-            text-align: center;
-        }
+    form {
+      margin: 20px auto;
+      padding: 10px 20px;
+      width: 100%;
+      border: 1px solid gray;
+      /* text-align: center; */
+    }
 
-        table{
-            border-collapse: collapse;
-            position: relative;
-            width: 80%;
-            margin: 20px auto
-        }
+    form label{
+      display: block;
+      margin-top: 15px;
+    }
 
-        th, td{
-            border: 1px solid rgb(190, 190, 190);
-            padding:30px;
-            text-align: center;
-            vertical-align: middle;
-        }
+    form input {
+      width:100%;
+    }
 
-        form{
-            position: relative;
-            width: 80%;
-            margin: 20px auto
-        }
+    form textarea {
+      width: 100%;
+    }
 
-      .position {
-            color:blue;
-            position: sticky;
-            top:100px;
-            background: white;
-            z-index: 3;
-        }
-    </style>
+    #btn_submit {
+      margin-top: 10px;
+      padding: 5px;
+      width: 100%;
+      background-color: var(--cor-fundo);
+      color: white;
+      border: none;
+    }
+
+    footer {
+      padding: 20px;
+      background-color: var(--cor-fundo);
+      color: white;
+      text-align: center;
+    }
+  </style>
 </head>
+
 <body>
-    <header>
-        <h1 class="title">Cardápio/Catalogo Digital</h1>
-        <p>Confira nossos produtos deliciosos!</p>
-        <nav class="position">
-            <a href="#catalogo">Catálogo</a>
-            <a href="#tabelaDePrecos">Tabela de Preços</a>
-            <a href="#cadastro">Cadastro</a>
-          </nav>
-    </header>
-    <main>
-        <section id="catalogo">
-            <h2>Cardápio/Catálogo</h2>
-                <article>
-                        <h3>Produto 1</h3>
-                        <p> Descrição do produto 1</p>
-                        <figure>
-                            <img src="./assets/pizza - Copia.jpg" alt="Pizza" />
-                            <figcaption>Imagem de uma pizza</figcaption>
-                        </figure>
-                </article>
+  <header>
+    <h1 class="title">Cardápio/Catalogo Digital</h1>
+    <p>Confira nossos produtos deliciosos!</p>
+    <nav>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#tabelaDePrecos">Tabela de Preços</a>
+      <a href="#cadastro">Cadastro</a>
+    </nav>
+  </header>
+  <main>
+    <section id="catalogo">
+      <h2>Cardápio/Catálogo</h2>
+      <article class="catalogo-item">
+        <figure class="catalogo-imagem">
+          <img src="./assets/pizza.jpg" alt="Pizza" />
+          <figcaption>Imagem de uma pizza</figcaption>
+        </figure>
+        <div class="catalogo-texto">
+          <h3>Produto 1</h3>
+          <p> Descrição do produto 1</p>
+        </div>
+      </article>
 
-                <article>
-                        <h3>Produto 2</h3>
-                        <p> Descrição do produto 2</p>
-                        <figure>
-                            <img src="./assets/pizza - Copia.jpg" alt="Pizza" />
-                            <figcaption>Imagem de uma pizza</figcaption>
-                        </figure>
-                </article>
+      <article class="catalogo-item">
+        <figure class="catalogo-imagem">
+          <img src="./assets/pizza.jpg" alt="Pizza" />
+          <figcaption>Imagem de uma pizza</figcaption>
+        </figure>
+        <div class="catalogo-texto">
+          <h3>Produto 2</h3>
+          <p> Descrição do produto 2</p>
+        </div>
+      </article>
 
-                <article>
-                    <h3>Produto 3</h3>
-                    <p> Descrição do produto 3</p>
-                    <figure>
-                        <img src="./assets/pizza - Copia.jpg" alt="Pizza" />
-                        <figcaption>Imagem de uma pizza</figcaption>
-                    </figure>
-                </article>
+      <article class="catalogo-item">
+        <figure class="catalogo-imagem">
+          <img src="./assets/pizza.jpg" alt="Pizza" />
+          <figcaption>Imagem de uma pizza</figcaption>
+        </figure>
+        <div class="catalogo-texto">
+          <h3>Produto 3</h3>
+          <p> Descrição do produto 3</p>
+        </div>
+      </article>
 
-                <article>
-                    <h3>Produto 4</h3>
-                    <p> Descrição do produto 4</p>
-                    <figure>
-                        <img src="./assets/pizza - Copia.jpg" alt="Pizza" />
-                        <figcaption>Imagem de uma pizza</figcaption>
-                    </figure>
-                </article>
+      <article class="catalogo-item">
+        <figure class="catalogo-imagem">
+          <img src="./assets/pizza.jpg" alt="Pizza" />
+          <figcaption>Imagem de uma pizza</figcaption>
+        </figure>
+        <div class="catalogo-texto">
+          <h3>Produto 4</h3>
+          <p> Descrição do produto 4</p>
+        </div>
+      </article>
 
-                <article>
-                    <h3>Produto 5</h3>
-                    <p> Descrição do produto 5</p>
-                    <figure>
-                        <img src="./assets/pizza - Copia.jpg" alt="Pizza" />
-                        <figcaption>Imagem de uma pizza</figcaption>
-                    </figure>
-                </article>
+      <article class="catalogo-item">
+        <figure class="catalogo-imagem">
+          <img src="./assets/pizza.jpg" alt="Pizza" />
+          <figcaption>Imagem de uma pizza</figcaption>
+        </figure>
+        <div class="catalogo-texto">
+          <h3>Produto 5</h3>
+          <p> Descrição do produto 5</p>
+        </div>
+      </article>
 
-                <article>
-                    <h3>Produto 6</h3>
-                    <p> Descrição do produto 6</p>
-                    <figure>
-                        <img src="./assets/pizza - Copia.jpg" alt="Pizza" />
-                        <figcaption>Imagem de uma pizza</figcaption>
-                    </figure>
-                </article>
+      <article class="catalogo-item">
+        <figure class="catalogo-imagem">
+          <img src="./assets/pizza.jpg" alt="Pizza" />
+          <figcaption>Imagem de uma pizza</figcaption>
+        </figure>
+        <div class="catalogo-texto">
+          <h3>Produto 6</h3>
+          <p> Descrição do produto 6</p>
+        </div>
+      </article>
 
-                <article>
-                    <h3>Produto 7</h3>
-                    <p> Descrição do produto </p>
-                    <figure>
-                        <img src="./assets/pizza - Copia.jpg" alt="Pizza" />
-                        <figcaption>Imagem de uma pizza</figcaption>
-                    </figure>
-                </article>
-        </section>
+      <article class="catalogo-item">
+        <figure class="catalogo-imagem">
+          <img src="./assets/pizza.jpg" alt="Pizza" />
+          <figcaption>Imagem de uma pizza</figcaption>
+        </figure>
+        <div class="catalogo-texto">
+          <h3>Produto 7</h3>
+          <p> Descrição do produto </p>
+        </div>
+      </article>
+    </section>
 
-            <br>
-            <br>
+    <section id="tabelaDePrecos">
+      <h1>Tabela de Preços</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Produtos</th>
+            <th>Preço</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td> Produto 1</td>
+            <td>R$ 10,00</td>
+          </tr>
+          <tr>
+            <td>Produto 2</td>
+            <td>R$ 15,00</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
-        <table>
-            <caption>Tabela de Preços</caption>
-            <section id="tabelaDePrecos">
-                    <thead>
-                        <tr>
-                            <th>Produtos</th>
-                            <th>Preço</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td> Produto 1</td>
-                            <td>R$ 10,00</td>
-                        </tr>
-                        <tr>
-                            <td>Produto 2</td>
-                            <td>R$ 15,00</td>
-                        </tr>
-                    </tbody>
-            </section>    
-        </table>
-        
-        <br>
-        <br>
-
-        <form>
-            <legend>Dados Pessoais</legend>
-            <section id="cadastro">
-
-                    <div class="margin-bottom">
-                        <label for="name">Nome:</label>
-                        <input id="name" type="text" placeholder="nome"/>
-                    </div>
-
-                    <div class="margin-bottom">
-                        <label for="enail">Email</label>
-                        <input id="name" type="text" placeholder="email"/>
-                    </div>
-
-                    <div class="margin-bottom">
-                        <label for="telefone">Telefone:</label>
-                        <input id="name" type="number" placeholder="telefone"/>
-                    </div>
-
-                    <br>
-                    <br>
-
-                    <div>
-                        <label for="mensagem">Mensagem</label>
-                        <textarea 
-                        style="resize: none;" name="mensagem" id="mensagem" cols="30" rows="10" minlength="0" maxlength="200"></textarea>
-                    </div>
-                    <input class="btn_submit" type="submit" value="Enviar">
-            </section>
-        </form>
-    </main>
-    <footer>
-        <p>@ 2023 Cardápio/Catálogo Digital. Todos os direitos reservados.</p>
-    </footer>
+    <section id="cadastro">
+      <h1>Formulário de Cadastro</h1>
+      <form autocomplete="off">
+        <label for="nome">Nome:</label>
+        <input id="nome" type="text">
+        <label for="email">E-mail:</label>
+        <input id="email" type="email">
+        <label for="telefone">Telefone:</label>
+        <input id="telefone" type="tel">
+        <label for="message">Mensagem:</label>
+        <textarea id="message" rows="8"></textarea>
+        <input id="btn_submit" type="submit" value="Enviar">
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>@ 2023 Cardápio/Catálogo Digital. Todos os direitos reservados.</p>
+  </footer>
 </body>
+
 </html>
