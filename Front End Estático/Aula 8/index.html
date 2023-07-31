@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/favicon.png" />
+    <title>Feane</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="position-relative min-vh-100 d-flex flex-column">
+      <img
+        src="./assets/background.jpg"
+        alt="Foto de hamburguer e batata"
+        class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
+      />
+      <header class="py-3 container">
+        <nav class="navbar navbar-dark navbar-expand-lg bg-transparent">
+          <div class="container-fluid h-100">
+            <a class="navbar-brand text-white ourFont fixFont" href="#"
+              >Feane</a
+            >
+            <button
+              class="navbar-toggler bg-transparent collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span> </span>
+              <span> </span>
+              <span> </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul
+                class="navbar-nav me-auto mb-3 mb-lg-0 text-uppercase d-flex justify-content-center w-100 fs-3 gap-4 text-center"
+              >
+                <li class="nav-item">
+                  <a
+                    class="nav-link active text-warning"
+                    aria-current="page"
+                    href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white hoverOrange" href="#our-menu">Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white hoverOrange" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white hoverOrange" href="#book-table"
+                    >Book table</a
+                  >
+                </li>
+              </ul>
+              <div class="d-flex align-items-center justify-content-center">
+                <span
+                  class="fa-solid fa-user text-white px-3 fs-3 hoverOrange"
+                ></span>
+                <span
+                  class="fa-solid fa-cart-shopping text-white px-3 fs-3 hoverOrange"
+                ></span>
+                <span
+                  class="fa-solid fa-magnifying-glass text-white px-3 fs-3 hoverOrange"
+                ></span>
+
+                <form class="d-flex" role="search">
+                  <button
+                    class="text-nowrap btn btn-warning rounded-pill btn-lg px-5 fs-3 text-white"
+                    type="submit"
+                  >
+                    Order Online
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- INÍCIO DO SLIDE -->
+      <section class="container" id="carrossel-inicio">
+        <!-- CARROUSEL -->
+        <div id="carouselExampleIndicators" class="carousel slide galeria">
+          <!-- INDICADORES DO SLIDE -->
+          <div class="carousel-indicators align-items-center fixIndicator">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div
+            class="carousel-inner fixTop translate-middle-y fixPaddingR w-100"
+          >
+            <div class="carousel-item active slide-transition">
+              <div class="d-flex flex-column gap-2 text-white">
+                <h1 class="ourFont display-1">Fast Food Restaurant</h1>
+                <p class="fs-4">
+                  Doloremque, itaque aperiam facilis rerum, commodi, temporibus
+                  sapiente ad mollitia laborum quam quisquam esse error unde.
+                  Tempora ex doloremque, labore, sunt repellat dolore, iste
+                  magni quos nihil ducimus libero ipsam.
+                </p>
+                <button
+                  class="text-nowrap btn btn-warning rounded-pill btn-lg px-3 ps-3 w-25 fs-3 text-white"
+                >
+                  Order Now
+                </button>
+              </div>
+            </div>
+
+            <div class="carousel-item slide-transition">
+              <div class="d-flex flex-column gap-2 text-white">
+                <h1 class="ourFont display-1">Fast Food Restaurant</h1>
+                <p class="fs-4">
+                  Doloremque, itaque aperiam facilis rerum, commodi, temporibus
+                  sapiente ad mollitia laborum quam quisquam esse error unde.
+                  Tempora ex doloremque, labore, sunt repellat dolore, iste
+                  magni quos nihil ducimus libero ipsam.
+                </p>
+                <button
+                  class="text-nowrap btn btn-warning rounded-pill btn-lg px-3 ps-3 w-25 fs-3 text-white"
+                >
+                  Order Now
+                </button>
+              </div>
+            </div>
+
+            <div class="carousel-item slide-transition">
+              <div class="d-flex flex-column gap-2 text-white">
+                <h1 class="ourFont display-1">Fast Food Restaurant</h1>
+                <p class="fs-4">
+                  Doloremque, itaque aperiam facilis rerum, commodi, temporibus
+                  sapiente ad mollitia laborum quam quisquam esse error unde.
+                  Tempora ex doloremque, labore, sunt repellat dolore, iste
+                  magni quos nihil ducimus libero ipsam.
+                </p>
+                <button
+                  class="text-nowrap btn btn-warning rounded-pill btn-lg px-3 ps-3 w-25 fs-3 text-white"
+                >
+                  Order Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <main>
+      <!-- A PARTIR DAQUI GABI -->
+      <section class="container" id="offers">
+        <div class="d-flex flex-row gap-5 justify-content-start flex-wrap mt-5">
+          <div class="d-flex flex-row p-4 bg-dark rounded gap-4 flex-grow-1">
+            <div
+              class="container-img border border-5 border-warning rounded-circle d-flex align-items-center justify-content-center"
+            >
+              <img
+                class="img-size rounded-circle"
+                src="./assets/o1.jpg"
+                alt="Foto de um hambúrguer"
+              />
+            </div>
+            <div class="text-white mt-5">
+              <h4 class="ourFont fs-2">Tasty Thursdays</h4>
+              <p class="fs-4 ourFont mt-4">
+                <span class="display-4">20%</span> off
+              </p>
+              <button
+                class="text-nowrap btn btn-warning rounded-pill btn-sm px-5 py-3 fs-4 text-white"
+                type="submit"
+              >
+                Order Now
+                <span
+                  class="fa-solid fa-cart-shopping text-white px-1 fs-5 hoverOrange"
+                ></span>
+              </button>
+            </div>
+          </div>
+          <div
+            div
+            class="d-flex flex-row p-4 bg-dark rounded gap-4 flex-grow-1"
+          >
+            <div
+              class="container-img border border-5 border-warning rounded-circle d-flex align-items-center justify-content-center"
+            >
+              <img
+                class="img-size rounded-circle"
+                src="./assets/o2.jpg"
+                alt="Foto de uma pizza"
+              />
+            </div>
+            <div class="text-white mt-5">
+              <h4 class="ourFont fs-2">Pizza Days</h4>
+              <p class="fs-4 ourFont mt-4">
+                <span class="display-4">15%</span> Off
+              </p>
+              <button
+                class="text-nowrap btn btn-warning rounded-pill btn-sm px-5 py-3 fs-4 text-white"
+                type="submit"
+              >
+                Order Now
+                <span
+                  class="fa-solid fa-cart-shopping text-white px-1 fs-5 hoverOrange"
+                ></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- A PARTIR DAQUI DIEGO -->
+      <section class="container" id="our-menu">
+        <div class="d-flex flex-column gap-5 mt-5">
+          <h3 class="font-custom text-center pt-3">Our Menu</h3>
+          <div class="d-flex justify-content-center">
+            <div
+              class="btn-group d-flex gap-3 flex-wrap"
+              role="group"
+              aria-label="Basic radio toggle button group"
+            >
+              <input
+                type="radio"
+                class="btn-check"
+                name="btnradio"
+                id="btnradio1"
+                autocomplete="off"
+                checked
+              />
+              <label
+                class="btn btn-outline-dark rounded-pill px-4 fs-3 border-0"
+                for="btnradio1"
+                >All</label
+              >
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="btnradio"
+                id="btnradio2"
+                autocomplete="off"
+              />
+              <label
+                class="btn btn-outline-dark rounded-pill px-4 fs-3 border-0"
+                for="btnradio2"
+                >Burguer</label
+              >
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="btnradio"
+                id="btnradio3"
+                autocomplete="off"
+              />
+              <label
+                class="btn btn-outline-dark rounded-pill px-4 fs-3 border-0"
+                for="btnradio3"
+                >Pizza</label
+              >
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="btnradio"
+                id="btnradio4"
+                autocomplete="off"
+              />
+              <label
+                class="btn btn-outline-dark rounded-pill px-4 fs-3 border-0"
+                for="btnradio4"
+                >Pasta</label
+              >
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="btnradio"
+                id="btnradio5"
+                autocomplete="off"
+              />
+              <label
+                class="btn btn-outline-dark rounded-pill px-4 fs-3 border-0"
+                for="btnradio5"
+                >Fries</label
+              >
+            </div>
+          </div>
+
+          <div class="d-flex gap-5 justify-content-center flex-wrap">
+            <div
+              class="card border-0 our-menu-card bg-dark rounded-bottom-4 rounded-top-5"
+              style="width: 35rem"
+            >
+              <div
+                class="our-menu-img-container border-1 bg-body-tertiary d-flex align-items-center justify-content-center rounded-top-4"
+              >
+                <img
+                  src="./assets/our-menu/burguer.png"
+                  class="card-img-top"
+                  alt="Foto do Hamburguer"
+                />
+              </div>
+              <div class="card-body text-white border-0 p-5">
+                <h5 class="card-title fs-2 mb-4">Delicious Burger</h5>
+                <p class="card-text fs-4">
+                  Veniam debitis quaerat officiis quasi cupiditate quo, quisquam
+                  velit, magnam voluptatem repellendus sed eaque.
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-5"
+                >
+                  <p class="card-text fs-4 m-0">R$ 10,00</p>
+                  <a
+                    href="#"
+                    class="btn btn-primary fa-solid fa-cart-shopping text-white bg-warning rounded-pill fs-5 d-flex align-items-center p-3 border-0"
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="card border-0 our-menu-card bg-dark rounded-bottom-4 rounded-top-5"
+              style="width: 35rem"
+            >
+              <div
+                class="our-menu-img-container border-1 bg-body-tertiary d-flex align-items-center justify-content-center rounded-top-4"
+              >
+                <img
+                  src="./assets/our-menu/burguer.png"
+                  class="card-img-top"
+                  alt="Foto do Hamburguer"
+                />
+              </div>
+              <div class="card-body text-white border-0 p-5">
+                <h5 class="card-title fs-2 mb-4">Delicious Burger</h5>
+                <p class="card-text fs-4">
+                  Veniam debitis quaerat officiis quasi cupiditate quo, quisquam
+                  velit, magnam voluptatem repellendus sed eaque.
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-5"
+                >
+                  <p class="card-text fs-4 m-0">R$ 10,00</p>
+                  <a
+                    href="#"
+                    class="btn btn-primary fa-solid fa-cart-shopping text-white bg-warning rounded-pill fs-5 d-flex align-items-center p-3 border-0"
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="card border-0 our-menu-card bg-dark rounded-bottom-4 rounded-top-5"
+              style="width: 35rem"
+            >
+              <div
+                class="our-menu-img-container border-1 bg-body-tertiary d-flex align-items-center justify-content-center rounded-top-4"
+              >
+                <img
+                  src="./assets/our-menu/fritas.png"
+                  class="card-img-top"
+                  alt="Foto das Fritas"
+                />
+              </div>
+              <div class="card-body text-white border-0 p-5">
+                <h5 class="card-title fs-2 mb-4">Delicious Fries</h5>
+                <p class="card-text fs-4">
+                  Veniam debitis quaerat officiis quasi cupiditate quo, quisquam
+                  velit, magnam voluptatem repellendus sed eaque.
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-5"
+                >
+                  <p class="card-text fs-4 m-0">R$ 10,00</p>
+                  <a
+                    href="#"
+                    class="btn btn-primary fa-solid fa-cart-shopping text-white bg-warning rounded-pill fs-5 d-flex align-items-center p-3 border-0"
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="card border-0 our-menu-card bg-dark rounded-bottom-4 rounded-top-5"
+              style="width: 35rem"
+            >
+              <div
+                class="our-menu-img-container border-1 bg-body-tertiary d-flex align-items-center justify-content-center rounded-top-4"
+              >
+                <img
+                  src="./assets/our-menu/pasta.png"
+                  class="card-img-top"
+                  alt="Foto do Macarrão"
+                />
+              </div>
+              <div class="card-body text-white border-0 p-5">
+                <h5 class="card-title fs-2 mb-4">Delicious Pasta</h5>
+                <p class="card-text fs-4">
+                  Veniam debitis quaerat officiis quasi cupiditate quo, quisquam
+                  velit, magnam voluptatem repellendus sed eaque.
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-5"
+                >
+                  <p class="card-text fs-4 m-0">R$ 10,00</p>
+                  <a
+                    href="#"
+                    class="btn btn-primary fa-solid fa-cart-shopping text-white bg-warning rounded-pill fs-5 d-flex align-items-center p-3 border-0"
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="card border-0 our-menu-card bg-dark rounded-bottom-4 rounded-top-5"
+              style="width: 35rem"
+            >
+              <div
+                class="our-menu-img-container border-1 bg-body-tertiary d-flex align-items-center justify-content-center rounded-top-4"
+              >
+                <img
+                  src="./assets/our-menu/pasta.png"
+                  class="card-img-top"
+                  alt="Foto do Macarrão"
+                />
+              </div>
+              <div class="card-body text-white border-0 p-5">
+                <h5 class="card-title fs-2 mb-4">Delicious Pasta</h5>
+                <p class="card-text fs-4">
+                  Veniam debitis quaerat officiis quasi cupiditate quo, quisquam
+                  velit, magnam voluptatem repellendus sed eaque.
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-5"
+                >
+                  <p class="card-text fs-4 m-0">R$ 10,00</p>
+                  <a
+                    href="#"
+                    class="btn btn-primary fa-solid fa-cart-shopping text-white bg-warning rounded-pill fs-5 d-flex align-items-center p-3 border-0"
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="card border-0 our-menu-card bg-dark rounded-bottom-4 rounded-top-5"
+              style="width: 35rem"
+            >
+              <div
+                class="our-menu-img-container border-1 bg-body-tertiary d-flex align-items-center justify-content-center rounded-top-4"
+              >
+                <img
+                  src="./assets/our-menu/pizza.png"
+                  class="card-img-top"
+                  alt="Foto da Pizza"
+                />
+              </div>
+              <div class="card-body text-white border-0 p-5">
+                <h5 class="card-title fs-2 mb-4">Delicious Pizza</h5>
+                <p class="card-text fs-4">
+                  Veniam debitis quaerat officiis quasi cupiditate quo, quisquam
+                  velit, magnam voluptatem repellendus sed eaque.
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-5"
+                >
+                  <p class="card-text fs-4 m-0">R$ 10,00</p>
+                  <a
+                    href="#"
+                    class="btn btn-primary fa-solid fa-cart-shopping text-white bg-warning rounded-pill fs-5 d-flex align-items-center p-3 border-0"
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="card border-0 our-menu-card bg-dark rounded-bottom-4 rounded-top-5"
+              style="width: 35rem"
+            >
+              <div
+                class="our-menu-img-container border-1 bg-body-tertiary d-flex align-items-center justify-content-center rounded-top-4"
+              >
+                <img
+                  src="./assets/our-menu/pizza.png"
+                  class="card-img-top"
+                  alt="Foto da Pizza"
+                />
+              </div>
+              <div class="card-body text-white border-0 p-5">
+                <h5 class="card-title fs-2 mb-4">Delicious Pizza</h5>
+                <p class="card-text fs-4">
+                  Veniam debitis quaerat officiis quasi cupiditate quo, quisquam
+                  velit, magnam voluptatem repellendus sed eaque.
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-5"
+                >
+                  <p class="card-text fs-4 m-0">R$ 10,00</p>
+                  <a
+                    href="#"
+                    class="btn btn-primary fa-solid fa-cart-shopping text-white bg-warning rounded-pill fs-5 d-flex align-items-center p-3 border-0"
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="card border-0 our-menu-card bg-dark rounded-bottom-4 rounded-top-5"
+              style="width: 35rem"
+            >
+              <div
+                class="our-menu-img-container border-1 bg-body-tertiary d-flex align-items-center justify-content-center rounded-top-4"
+              >
+                <img
+                  src="./assets/our-menu/pizza.png"
+                  class="card-img-top"
+                  alt="Foto da Pizza"
+                />
+              </div>
+              <div class="card-body text-white border-0 p-5">
+                <h5 class="card-title fs-2 mb-4">Delicious Pizza</h5>
+                <p class="card-text fs-4">
+                  Veniam debitis quaerat officiis quasi cupiditate quo, quisquam
+                  velit, magnam voluptatem repellendus sed eaque.
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-5"
+                >
+                  <p class="card-text fs-4 m-0">R$ 10,00</p>
+                  <a
+                    href="#"
+                    class="btn btn-primary fa-solid fa-cart-shopping text-white bg-warning rounded-pill fs-5 d-flex align-items-center p-3 border-0"
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-center mb-5">
+            <button
+              class="text-nowrap btn btn-warning rounded-pill px-5 py-2 fs-3 text-white"
+            >
+              View More
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- A PARTIR DAQUI OCTÁVIO -->
+      <section class="setbg" id="about">
+        <div class="container d-flex flex-wrap flex-row align-items-center">
+          <figure>
+            <img
+              class="fix-img img-fluid"
+              src="./assets/about-img.png"
+              alt="Imagem ilustrativa de um lanche"
+            />
+          </figure>
+
+          <div class="margin-ajust">
+            <h2 class="text-white font-ajust ourFont mb-3">We Are Feane</h2>
+            <p class="text-white fix-p mb-5">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable. If you are going to use a passage of Lorem
+              Ipsum, you need to be sure there isn't anything embarrassing
+              hidden in the middle of text. All
+            </p>
+            <button
+              class="text-nowrap btn btn-warning rounded-pill px-5 py-2 fs-3 text-white button-custom"
+            >
+              Read More
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- FIM OCTÁVIO -->
+
+      <!-- A PARTIR DAQUI ANA  -->
+      <section class="my-5 container" id="book-table">
+        <h2 class="font-custom pt-3 mb-5">Book A Table</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <form class="form-container">
+              <input
+                class="form-control form-input"
+                type="text"
+                placeholder="Your Name"
+              />
+              <input
+                class="form-control form-input"
+                type="tel"
+                placeholder="Phone Number"
+              />
+              <input
+                class="form-control form-input"
+                type="email"
+                placeholder="Your Email"
+              />
+              <select class="form-select form-input">
+                <option value="" disabled selected>How many persons?</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+              <input class="form-control form-input" type="date" />
+              <input
+                class="btn btn-lg text-nowrap form-button"
+                type="submit"
+                value="Book Now"
+              />
+            </form>
+          </div>
+          <div class="col-md-6">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.9771264425863!2d-46.69488092596903!3d-23.56926497879436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5786b7831717%3A0x13dc48ab54d37aba!2sAda%20Tech!5e0!3m2!1spt-BR!2sbr!4v1690649780036!5m2!1spt-BR!2sbr"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="my-5 container" id="what-says-our-customer">
+        <h3 class="font-custom text-center pt-3">What Says Our Customers</h3>
+        <div id="carouselClient" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="box-item">
+                    <div class="detail-box-item">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Pellentesque accumsan orci in lorem consequat, in
+                        pharetra nibh accumsan. Donec consequat pretium sapien
+                        ac condimentum. Quisque rhoncus erat id hendrerit
+                        ultricies.
+                      </p>
+                      <h3>Raniel Mendonça</h3>
+                      <p>Rio de Janeiro</p>
+                    </div>
+                    <div class="img-box-item">
+                      <img
+                        class="img-box"
+                        src="https://media.licdn.com/dms/image/C4E03AQGjToWWZywjrQ/profile-displayphoto-shrink_800_800/0/1637682500481?e=2147483647&v=beta&t=9tGRWPU3xsEgR56B1OHFAPES0pQt6U1zzOXLrexSOn0"
+                        width="75px"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="box-item">
+                    <div class="detail-box-item">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Pellentesque accumsan orci in lorem consequat, in
+                        pharetra nibh accumsan. Donec consequat pretium sapien
+                        ac condimentum. Quisque rhoncus erat id hendrerit
+                        ultricies.
+                      </p>
+                      <h3>Raniel Mendonça</h3>
+                      <p>Rio de Janeiro</p>
+                    </div>
+                    <div class="img-box-item">
+                      <img
+                        class="img-box"
+                        src="https://media.licdn.com/dms/image/C4E03AQGjToWWZywjrQ/profile-displayphoto-shrink_800_800/0/1637682500481?e=2147483647&v=beta&t=9tGRWPU3xsEgR56B1OHFAPES0pQt6U1zzOXLrexSOn0"
+                        width="75px"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="box-item">
+                    <div class="detail-box-item">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Pellentesque accumsan orci in lorem consequat, in
+                        pharetra nibh accumsan. Donec consequat pretium sapien
+                        ac condimentum. Quisque rhoncus erat id hendrerit
+                        ultricies.
+                      </p>
+                      <h3>Henrique Suel</h3>
+                      <p>São Paulo</p>
+                    </div>
+                    <div class="img-box-item">
+                      <img
+                        class="img-box"
+                        src="https://avatars.githubusercontent.com/u/22986830"
+                        width="75px"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="box-item">
+                    <div class="detail-box-item">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Pellentesque accumsan orci in lorem consequat, in
+                        pharetra nibh accumsan. Donec consequat pretium sapien
+                        ac condimentum. Quisque rhoncus erat id hendrerit
+                        ultricies.
+                      </p>
+                      <h3>Henrique Suel</h3>
+                      <p>São Paulo</p>
+                    </div>
+                    <div class="img-box-item">
+                      <img
+                        class="img-box"
+                        src="https://avatars.githubusercontent.com/u/22986830"
+                        width="75px"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer text-white">
+      <div class="text-center container">
+        <div class="row pt-5">
+          <div class="col-md-4">
+            <h4 class="font-custom">Contact Us</h4>
+            <ul class="list-unstyled">
+              <li class="py-2">
+                <i class="fa-solid fa-location-dot fa-xl"></i
+                ><span> Location</span>
+              </li>
+              <li class="py-2">
+                <i class="fa-solid fa-phone fa-xl"></i
+                ><span> Call +01 1234567890</span>
+              </li>
+              <li class="py-2">
+                <i class="fa-solid fa-envelope fa-xl"></i
+                ><span> demo@gmail.com</span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <a class="font-custom text-white" href="#">Feane</a>
+            <p>
+              Necessary, making this the first true generator on the Internet.
+              It uses a dictionary of over 200 Latin words, combined with
+            </p>
+            <div>
+              <i
+                class="fa-brands fa-facebook fa-2xl footer-icon"
+                aria-hidden="true"
+              ></i>
+              <i
+                class="fa-brands fa-twitter fa-2xl footer-icon"
+                aria-hidden="true"
+              ></i>
+              <i
+                class="fa-brands fa-linkedin fa-2xl footer-icon"
+                aria-hidden="true"
+              ></i>
+              <i
+                class="fa-brands fa-instagram fa-2xl footer-icon"
+                aria-hidden="true"
+              ></i>
+              <i
+                class="fa-brands fa-pinterest fa-2xl footer-icon"
+                aria-hidden="true"
+              ></i>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h4 class="font-custom">Opening Hours</h4>
+            <p>Everyday</p>
+            <p>10:00 AM - 10:00 PM</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center py-5">
+            <p>© 2023 All Rights Reserved By Free Html Templates</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/fadd83e88c.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
