@@ -35,62 +35,81 @@
       </table>
     </div>
 
+    <!-- Modal -->
     <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
+
+          <!-- Modal Header -->
           <div class="modal-header">
             <h1 class="modal-title fs-5" id="formModalLabel">Adicionar/Editar roupa</h1>
           </div>
+
+          <!-- Modal Body -->
           <div class="modal-body">
             <form>
-              <label class="form-label">Categoria</label>
-              <div class="mb-3">
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="categoriaRadio" id="categoriaRadioRoupa"
-                    value="roupa">
-                  <label class="form-check-label" for="categoriaRadioRoupa">Roupa</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="categoriaRadio" id="categoriaRadioCamisa"
-                    value="camisa">
-                  <label class="form-check-label" for="categoriaRadioCamisa">Camisa</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="categoriaRadio" id="categoriaRadioCalca"
-                    value="calca">
-                  <label class="form-check-label" for="categoriaRadioCalca">Calça</label>
+              <!-- Categoria -->
+              <div>
+                <label class="form-label">Categoria</label>
+                <!-- Radio Buttons -->
+                <div class="mb-3">
+
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="categoriaRadio" id="categoriaRadioRoupa"
+                      value="roupa">
+                    <label class="form-check-label" for="categoriaRadioRoupa">Roupa</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="categoriaRadio" id="categoriaRadioCamisa"
+                      value="camisa">
+                    <label class="form-check-label" for="categoriaRadioCamisa">Camisa</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="categoriaRadio" id="categoriaRadioCalca"
+                      value="calca">
+                    <label class="form-check-label" for="categoriaRadioCalca">Calça</label>
+                  </div>
                 </div>
               </div>
+              <!-- Roupa - Código -->
               <div>
                 <label class="form-label" for="codigo">Código</label>
                 <input class="form-control" id="codigo" name="codigo" type="number" step="1" />
               </div>
+              <!-- Roupa - Descrição -->
               <div>
                 <label class="form-label" for="descricao">Descrição</label>
                 <input class="form-control" id="descricao" name="descricao" type="text" />
               </div>
+              <!-- Roupa - Valor -->
               <div>
                 <label class="form-label" for="valor">Valor</label>
                 <input class="form-control" id="valor" name="valor" type="number" min="0.00" step="0.01" />
               </div>
+              <!-- Camisa - Gola -->
               <div>
                 <label class="form-label" for="gola">Gola</label>
                 <input class="form-control" id="gola" name="gola" type="text" />
               </div>
+              <!-- Camisa - Manga -->
               <div>
                 <label class="form-label" for="manga">Manga</label>
                 <input class="form-control" id="manga" name="manga" type="text" />
               </div>
+              <!-- Calça - Cintura -->
               <div>
                 <label class="form-label" for="cintura">Cintura</label>
                 <input class="form-control" id="cintura" name="cintura" type="text" />
               </div>
+              <!-- Calça - Tipo -->
               <div>
                 <label class="form-label" for="tipo">Tipo</label>
                 <input class="form-control" id="tipo" name="tipo" type="text" />
               </div>
             </form>
           </div>
+
+          <!-- Modal Footer -->
           <div class="modal-footer">
             <button type="button" class="btn btn-primary" onclick="salvarRoupa()">Salvar</button>
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
