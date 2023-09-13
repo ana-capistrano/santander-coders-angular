@@ -7,7 +7,7 @@ const modal = document.querySelector('#formModal');
 /* Estoque */
 let estoque;
 
-/* Incializando a estoque apenas depois de finalizar o carregamento da página */
+/* Incializando o estoque apenas depois de finalizar o carregamento da página */
 window.onload = function () {
   estoque = new GestaoEstoque();
 }
@@ -69,6 +69,7 @@ function validarModal(categoria, codigo, descricao, valor, gola, manga, cintura,
     return ['O preenchimento da categoria é obrigatório!'];
   }
 
+  /* Verificar se a categoria informada é válida */
   if (categoria.value !== 'roupa' && categoria.value !== 'camisa' && categoria.value !== 'calca') {
     return ['A categoria informada não existe'];
   }
@@ -110,7 +111,7 @@ function salvarRoupaModal() {
   /* Validando as informações recebidas */
   let messageArray = validarModal(categoria, codigo.value, descricao.value, valor.value, gola.value, manga.value, cintura.value, tipo.value);
 
-  /* Se a validação retornar com alguma mensagem, esta será exibida para o usuário */
+  /* Se a validação retornar com alguma informação, esta será exibida para o usuário */
   if (messageArray.length !== 0) {
     alert('Favor verificar os seguintes campos:\n' + messageArray.join(', '));
 
@@ -119,9 +120,10 @@ function salvarRoupaModal() {
 
   /* Verifica se vai adicionar ou editar */
   if (id.value === '') {
-    /* Criando uma nova instância e adicionando no estoque */
+    /* Criando uma novo item */
     estoque.adicionarItem(categoria.value, codigo.value, descricao.value, valor.value, gola.value, manga.value, cintura.value, tipo.value);
   } else {
+    /* Atualizando um item já existente a partir do id */
     estoque.atualizarItem(id.value, codigo.value, descricao.value, valor.value, gola.value, manga.value, cintura.value, tipo.value);
   }
 
@@ -146,8 +148,6 @@ function editarRoupaModal(id) {
   const mCintura = document.querySelector('#cintura');
   const mTipo = document.querySelector('#tipo');
 
-  mId.value = id;
-
   let item = estoque.obterItemPorId(id);
 
   /* Verificando a instância do item para carregar o radio button correto */
@@ -164,6 +164,9 @@ function editarRoupaModal(id) {
   document.querySelectorAll('input[name="categoriaRadio"]').forEach(element => {
     element.disabled = true;
   });
+
+  /* Carregando o id que será editado */
+  mId.value = id;
 
   /* Carregando os campos obrigatórios para todas as categorias */
   mCodigo.value = item.codigo;
