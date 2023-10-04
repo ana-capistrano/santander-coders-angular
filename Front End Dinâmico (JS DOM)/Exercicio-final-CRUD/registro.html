@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopList</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <form id="form">
+
+        <div>
+            <label for="categoria"> Categoria:</label>
+            <select id="categoria" name="categoria">
+                <option value="">--Escolha a categoria--</option>
+                <option value="feira">Feira</option>
+                <option value="mercado">Mercado</option>
+                <option value="mercearia">Mercearia</option>
+                <option value="bar">Bar</option>
+            </select><br>
+            <span id="categoriaError" class="error-msg"></span>
+        </div>
+
+        <div>
+            <label for="nome"> Nome: </label>
+            <input type="text" id="nome" name="nome"><br>
+            <span id="nomeError" class="error-msg"></span>
+        </div>
+
+
+        <div>
+            <label for="quantidade"> Quantidade:</label>
+            <input type="number" id="quantidade" name="quantidade">
+            <span id="quantidadeError" class="error-msg"></span>
+        </div>
+
+        <label for="unidade"> Unidade:</label>
+        <select id="unidade" name="unidade">
+            <option value="">--Escolha a unidade--</option>
+            <option value="un">UN</option>
+            <option value="quilo">KG</option>
+        </select><br>
+        <span id="unidadeError" class="error-msg"></span>
+        </div>
+
+        <div>
+            <label for="preco">Preço:</label>
+            <input type="number" id="preco" name="preco">
+            <span id="precoError" class="error-msg"></span>
+        </div>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+
+    <script type="module" src="registro.js"></script>
+</body>
+
+</html>
